@@ -1,7 +1,7 @@
 # Synthesizer Project for Nexys A7-100T
 
 ## Overview
-This project involves creating a digital synthesizer using the Nexys A7-100T FPGA board. The synthesizer generates audio output based on the pitch selected by the user through 16 switches on the board, and it features an envelope generator, oscillator, and output module. Debugging information is also provided through on-board LEDs.
+This project involves creating a melodic synthesizer using the Nexys A7-100T FPGA board. The synthesizer generates audio output based on the pitch selected by the user through the 16 switches on the board, and it features an envelope generator, oscillator, and output module. Debugging information is also provided through on-board LEDs.
 
 ## Features
 - **Oscillator Module**: Generates a waveform for the selected pitch, using a simple square wave.
@@ -22,15 +22,6 @@ This project involves creating a digital synthesizer using the Nexys A7-100T FPG
 - **Constraints File**:
   - `synthesizer.xdc`: Specifies the pin locations and I/O standards for the FPGA board, including audio output and debugging LEDs.
 
-## Deliverables
-1. **VHDL Source Code**: Include all the VHDL files listed above (`.vhd` files).
-2. **Constraints File**: The updated constraints file (`synthesizer.xdc`) specifying pin mappings for FPGA I/O.
-3. **Simulation Files** (Optional but recommended): Testbenches for verifying the correct operation of each module.
-4. **Project Documentation**:
-   - **README.md**: This file explaining the purpose of the project, features, files, and instructions for setup.
-   - **Block Diagram**: A diagram showing the interconnection of different modules within the synthesizer.
-   - **Waveform Screenshots**: Screenshots of simulated waveforms, showing outputs like the generated wave, envelope changes, and PWM audio signal.
-5. **Presentation Slides**: Summarize the project, including the purpose, approach, and results. Include visuals like the block diagram, waveforms, and the FPGA setup.
 
 ## Setup Instructions
 1. **Vivado Setup**:
@@ -56,6 +47,7 @@ This project involves creating a digital synthesizer using the Nexys A7-100T FPG
 
 ## Future Improvements
 - Implementing more waveforms such as sine, triangle, or sawtooth.
-- Adding a polyphony feature to play multiple notes simultaneously.
+- Adding a polyphony feature to play multiple notes simultaneously, also known as chords.
 - Improving the envelope generator for more dynamic sound modulation.
+- Output sound using a stereo device such as the PMOD I2S, rather than the Nexys A7-100T's on board mono output
 
